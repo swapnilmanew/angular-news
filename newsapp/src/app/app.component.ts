@@ -1,3 +1,4 @@
+import { NewsService } from './services/news.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newsapp';
+
+  constructor(private news:NewsService)
+  {
+    this.news.getNews().subscribe((data)=>{
+      console.log(data)
+    })
+  }
 }
