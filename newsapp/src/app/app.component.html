@@ -5,10 +5,9 @@
     <th>News Title</th>
   </thead>
   <tbody>
-    {{data.data[0].author}}
-    <tr *ngFor='data in data'>
+    <tr *ngFor='let item of data'>
       <td>
-        DATA IS HERE
+        {{item.data[0].author}}
       </td>
     </tr>
   </tbody>
