@@ -1,1 +1,15 @@
-<h1>APP COMPONENT</h1>
+<h1>{{title}}</h1>
+<table>
+  <thead>
+    <th>Number</th>
+    <th>News Title</th>
+  </thead>
+  <tbody>
+    {{data.data[0].author}}
+    <tr *ngFor='data in data'>
+      <td>
+        DATA IS HERE
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'newsapp';
-
+  title = 'newsapp'
+ data:any = []
   constructor(private news:NewsService)
   {
     this.news.getNews().subscribe((data)=>{
       console.log(data)
+      this.data = data
     })
   }
 }
