@@ -8,6 +8,6 @@ export class NewsService {
   constructor(private http:HttpClient) { }
 
   getNews(){
-    return this.http.get('https://inshortsapi.vercel.app/news?category=science');
+    return this.http.get('https://inshortsapi.vercel.app/news?category=science')
   }
 }

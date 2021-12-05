@@ -5,9 +5,9 @@
     <th>News Title</th>
   </thead>
   <tbody>
-    <tr *ngFor='let item of data'>
+    <tr *ngFor='let item of data; index as i'>
       <td>
-        {{item.data[0].author}}
+        {{item.data[0]}}
       </td>
     </tr>
   </tbody>

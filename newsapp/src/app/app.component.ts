@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newsapp'
- data:any = []
+ datas:any = []
   constructor(private news:NewsService)
   {
     this.news.getNews().subscribe((data)=>{
       console.log(data)
-      this.data = data
+      this.datas=data
     })
   }
 }
